@@ -1,0 +1,30 @@
+CREATE DATABASE employe;
+use employe;
+CREATE TABLE department (id int primary key, dep_name varchar(30) unique,dep_num int unique,contact long not null,location varchar(30) unique,dep_staff int unique);
+SELECT*FROM  department;
+INSERT INTO department VALUES(1,'computer',1,565598325,'banglore',20);
+INSERT INTO department VALUES(2,'Civil',2,7666148226,'hyderabad',21);
+INSERT INTO department VALUES(3,'cash',3,69651365,'bellari',15);
+INSERT INTO department VALUES(4,'Solutions',4,825446511,'kurnol',22);
+INSERT INTO department VALUES(5,'findal',5,6153136316,'chitoor',58);
+INSERT INTO department VALUES(6,'thoat',6,45950050,'navarnha',23);
+INSERT INTO department VALUES(7,'discuss',7,78626625,'nagaland',35);
+INSERT INTO department VALUES(8,'problem',8,8953136316,'majestic',11);
+INSERT INTO department VALUES(9,'findal',9,96153136316,'varngal',13);
+INSERT INTO department VALUES(10,'form',10,5553136316,'rajajinagar',16);
+SELECT*FROM department;
+
+CREATE TABLE chock(c_id int not null,c_name varchar(20) unique,c_work varchar(20),c_salary int,foreign key(c_id)references department(id));
+SELECT*FROM chock;
+INSERT INTO chock VALUES (1,'Somu','farmer',20000);
+INSERT INTO chock VALUES (2,'Somesh','doctor',200000);
+INSERT INTO chock VALUES (3,'lucky','teacher',10000);
+INSERT INTO chock VALUES (4,'kavi','engineer',400000);
+INSERT INTO chock VALUES (5,'pallavi','banker',25000);
+INSERT INTO chock VALUES (6,'Savithri','house',15000);
+INSERT INTO chock VALUES (7,'gunda','painter',2000);
+INSERT INTO chock VALUES (8,'uppi','roller',21000);
+INSERT INTO chock VALUES (9,'Sidhi','demander',30000);
+INSERT INTO chock VALUES (10,'Sandhya','saver',50000);
+SELECT*FROM chock;
+ 

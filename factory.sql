@@ -1,0 +1,32 @@
+CREATE DATABASE fact;
+use fact;
+CREATE TABLE factory(f_id int primary key, f_name varchar(30) unique,f_types int unique,f_income long not null,contact long not null,location varchar(30) unique,f_staff int unique,f_share int  unique,f_dep varchar(20) unique,f_quality int);
+SELECT*FROM factory;
+INSERT INTO factory VALUES(1,'manjunathafactory',2,1200000,9632548181,'banglore',101,25,'distributed',90);
+INSERT INTO factory VALUES(2,'manjufactory',1,1300000,922548181,'mysore',102,26,'seller',100);
+INSERT INTO factory VALUES(3,'nathafactory',3,1400000,9832548181,'warangal',103,65,'contacter',85);
+INSERT INTO factory VALUES(4,'athafactory',8,1500000,9852548181,'delhi',104,85,'trailler',91);
+INSERT INTO factory VALUES(5,'manthafactory',7,1600000,5692548181,'agra',105,95,'contracter',99);
+INSERT INTO factory VALUES(6,'siddhifactory',6,1700000,10132548181,'hyderabad',106,15,'selling',98);
+INSERT INTO factory VALUES(7,'textfactory',5,1800000,10232548181,'kolkatha',107,45,'distributer',97);
+INSERT INTO factory VALUES(8,'soilfactory',4,1900000,10332548181,'bengali',108,13,'producter',96);
+INSERT INTO factory VALUES(9,'ricefactory',13,200000,1042548181,'bellari',109,20,'complainer',95);
+INSERT INTO factory VALUES(10,'sugarfactory',9,2200000,1055548181,'manalore',110,21,'buted',94);
+INSERT INTO factory VALUES(11,'soapfactory',11,2300000,9652548181,'raichur',111,22,'stributed',93);
+INSERT INTO factory VALUES(12,'powderfactory',12,2400000,1062548181,'bidhar',112,23,'seminar',92);
+SELECT*FROM factory;
+
+CREATE TABLE chocalote1(c_id int not null,c_name varchar(20) unique,c_types varchar(20),c_taste varchar(20),c_highginic int ,c_contant int,c_ql int,c_colour varchar(20) unique,c_salary int ,c_sugar int,foreign key(c_id)references factory(f_id));
+SELECT*FROM chocalote1;
+INSERT INTO chocalote1 VALUES(1,'Dairymilk','rect','delicious',90,45,100,'dark',25000,30);
+INSERT INTO chocalote1 VALUES(2,'Dairymilkalmoand','circ','deli',91,55,99,'cock',35000,35);
+INSERT INTO chocalote1 VALUES(3,'Dairymilkchock','love','cious',92,65,98,'white',45000,40);
+INSERT INTO chocalote1 VALUES(4,'Dairymilknuts','sqr','ious',93,75,97,'black',55000,45);
+INSERT INTO chocalote1 VALUES(5,'milkybeer','tri','verygood',94,85,96,'milk',65000,50);
+INSERT INTO chocalote1 VALUES(6,'perk','comp','good',95,95,95,'grey',75000,55);
+INSERT INTO chocalote1 VALUES(7,'kitkat','ladu','fantastic',96,105,94,'pinl',85000,60);
+INSERT INTO chocalote1 VALUES(8,'kit','bumb','marbulecs',97,115,93,'purpl',95000,65);
+INSERT INTO chocalote1 VALUES(9,'kat','ovl','blowing',98,45,210,'red',15000,70);
+INSERT INTO chocalote1 VALUES(10,'munch','arch','glowing',99,315,92,'darkoo',13000,75);
+SELECT*FROM chocalote1;
+

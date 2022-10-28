@@ -1,0 +1,11 @@
+CREATE DATABASE series;
+use series;
+CREATE TABLE web_series(id int not null unique,name varchar(20) unique,channels varchar(20),no_of_episodes int, seasons int);
+SELECT*FROM web_series;
+INSERT INTO web_series VALUES(1,'vampiredairys','amazoan',35,11);
+INSERT INTO web_series VALUES(2,'squidegame','netflix',45,9);
+INSERT INTO web_series VALUES(3,'TOMY','amazoan',12,3);
+INSERT INTO web_series VALUES(4,'price of passion','hostar',98,1);
+INSERT INTO web_series VALUES(5,'My teacher','hostar',23,1);
+INSERT INTO web_series VALUES(6,'Dark despires','netflix',25,2);
+SELECT *FROM web_series;
