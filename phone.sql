@@ -1,0 +1,13 @@
+CREATE DATABASE mobile;
+USE phone;
+create table indian_hotels(id int not null, Hotel_name varchar(30),city varchar(30),pincode int,location_area varchar(30),hotel_gstNo varchar(30),special_Item varchar(30),item_price int,item_quantity int,hotel_ownerName varchar(30),chief_name varchar(30),f_name varchar(30) unique,f_types int unique,f_income long not null,contact long not null,location varchar(30) unique,f_staff int unique,f_share int  unique,f_dep varchar(20) unique,f_quality int,);
+insert into indian_hotels values(1,'Chats & Juice Corner ','Rajkot',101,'Gopalrao','235R34W45776','Biryan',120,1,'Tilak','srisham');
+insert into indian_hotels values(2,'Thinnantha Bhojana','South Mumbai',102,'Deshmukh ','96543G45E4','Mutton',100,2,'spoorthi','smruthi');
+insert into indian_hotels values(3,'PottaPenchudam','Karnataka',103,'Bhadkamkar Marg','2125D45E45','Dosa',40,1,'Sinchana','Shubam');
+insert into indian_hotels values(4,'Vachi thini Po','Andhara',104,'Amirpet','566G32W46','Idli',25,4,'Shashank','Sanjay');
+insert into indian_hotels values(5,'LuLu chats','Tamil Nadu',105,'Patkar','1234N443E32','LemonRice',30,2,'Rohan','Prashant');
+insert into indian_hotels values(6,'Oriean Chats','Kerela',106,'Bandra','546576F7U43','Phulihora',40,3,'Neeraj','Jeevika');
+insert into indian_hotels values(7,'Pooo Chats','Maharastra',107,'Gamdevi','2843Q88I65','Palavu',50,1,'Jaideep','Gavi');
+insert into indian_hotels values(8,'Rashmi chats','Gujarat',108,'Sidhwa','874K76O766','Meals',60,2,'Ganesh','Gagan');
+insert into indian_hotels values(9,'Ravi chats','UP',109,'Barodawallah','6543P78O876','Chicken',190,7,'Chetan','Chaitra');
+insert into indian_hotels values(10,'Shubi phuri','Telengana',110,'Jangali','6567V78M456','PlaneDosa',40,3,'vinoda','Lokesh');
